@@ -41,6 +41,17 @@ namespace BitCoinCalculator
                 float btcResult = userCoins * currentRate;
                 result.Text = $"{btcResult} {resultRates.bpi.EUR.code}";
             }
+            if(currencyMenu.SelectedItem.ToString() == "USD")
+            {
+                result.Visible = true; 
+                BitCoinRates resultRates = GetRates();
+                int userCoins = Int32.Parse(amountOfBtc.Text);
+                
+             
+                float currentRate = resultRates.bpi.USD.rate_float;
+                float btcResult = userCoins * currentRate;
+                result.Text = $"{btcResult} {resultRates.bpi.USD.code}";
+            }
         }
         public static BitCoinRates GetRates()
         {
@@ -60,12 +71,12 @@ namespace BitCoinCalculator
                 var response = responseReader.ReadToEnd();
                 bitcoin = JsonConvert.DeserializeObject<BitCoinRates>(response);
           }
-            
-            
-            
+           
 
-            
-               
+
+
+
+
 
 
 

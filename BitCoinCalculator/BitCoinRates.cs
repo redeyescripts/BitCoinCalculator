@@ -12,6 +12,7 @@ namespace BitCoinCalculator
     public class bpi
     {
         public EUR EUR { get; set; }
+        public USD USD { get; set; }
     }
     public class EUR
     {
@@ -31,5 +32,11 @@ namespace BitCoinCalculator
         {
             getRates = value;
         }
+    }
+    public class USD
+    {
+        public string code { get; set; }
+        public float rate_float { get; set; }
+
     }
 }

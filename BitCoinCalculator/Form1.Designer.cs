@@ -34,7 +34,7 @@ namespace BitCoinCalculator
             this.getRatesBtn = new System.Windows.Forms.Button();
             this.amountOfBtc = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.result1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // currencyMenu
@@ -76,13 +76,13 @@ namespace BitCoinCalculator
             this.result.Text = "Result";
             this.result.Visible = false;
             // 
-            // textBox1
+            // result1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 183);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Visible = false;
+            this.result1.Location = new System.Drawing.Point(36, 183);
+            this.result1.Name = "result1";
+            this.result1.Size = new System.Drawing.Size(121, 20);
+            this.result1.TabIndex = 4;
+            this.result1.Visible = false;
             // 
             // Form1
             // 
@@ -90,7 +90,7 @@ namespace BitCoinCalculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.result1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.amountOfBtc);
             this.Controls.Add(this.getRatesBtn);
@@ -109,7 +109,7 @@ namespace BitCoinCalculator
         private System.Windows.Forms.Button getRatesBtn;
         private System.Windows.Forms.TextBox amountOfBtc;
         private System.Windows.Forms.Label result;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox result1;
     }
 }
 
